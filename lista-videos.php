@@ -1,3 +1,1 @@
-<h2>
-    Lista de Vídeos
-</h2>
+<h2> Lista de Vídeos </h2>

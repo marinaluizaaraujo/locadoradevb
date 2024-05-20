@@ -1,1 +1,1 @@
-<h2>Locações</h2>
+<h2> Locações </h2>
