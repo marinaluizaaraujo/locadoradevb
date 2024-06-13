@@ -51,6 +51,9 @@ switch ($menu) {
     case "lista-videos":
         include ("lista-videos.php");
         break;
+    case "cad-videos":
+        include ("cad-videos.php");
+        break;
     case "lista-categorias":
         include ("lista-categorias.php");
         break;
