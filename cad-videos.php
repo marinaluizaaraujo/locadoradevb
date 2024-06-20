@@ -10,7 +10,7 @@
 <div>
     <div>
         <label for="duracaoVideo">Duração</label>
-        <input type="text" name="DuracaoVideo" id="duracaoVideo" />
+        <input type="text" name="duracaoVideo" id="duracaoVideo" />
     </div>
 </div>
 <div>
@@ -21,7 +21,7 @@
 </div>
 <div>
     <label for="idCategoria">Categoria</label>
-    <select name="idcategoria" id="idCategoria">
+    <select name="idCategoria" id="idCategoria">
         <option value="">Selecione uma Categoria</option>
 
         <?php

@@ -6,9 +6,14 @@ tituloVideo,
 duracaoVideo,
 valorLocacaoVideo,
 nomeCategoria,
-statusVideo 
+case
+when statusVideo = 1 then 'Disponivel'
+when statusVideo = 2 then 'Locado'
+when statusVideo = 3 then 'Indisponivel'
+end as statusVideo
 from 
-tbvideos as v inner join tbcategorias as c on v.idCategoria = c.idCategoria";
+tbvideos as v inner join tbCategorias as c on v.idCategoria = c.idCategoria
+order by tituloVideo asc";
 $rs = mysqli_query($conexao, $sql);
 
 ?>
@@ -18,6 +23,15 @@ $rs = mysqli_query($conexao, $sql);
     <a href="index.php?menu=cad-videos">
         Novo Vídeo 
     </a>
+</div>
+<div>
+    <form action="index.php?menu=lista-videos" method="post">
+        <label for="txtPesquisa">Pesquisar</label>
+        <input type="search" name="txtPesquisa" id="txtPesquisa"/>
+        <button type="submit">
+        <i class="ph ph-magnifying-glass"></i>
+        </button>
+    </form>
 </div>
 <table border="1">
     <thead>

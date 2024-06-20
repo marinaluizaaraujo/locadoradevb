@@ -6,6 +6,7 @@ include("./db/conexao.php");
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link do CSS -->
@@ -53,6 +54,9 @@ switch ($menu) {
         break;
     case "cad-videos":
         include ("cad-videos.php");
+        break;
+    case "inserir-videos":
+        include ("inserir-videos.php");
         break;
     case "lista-categorias":
         include ("lista-categorias.php");
